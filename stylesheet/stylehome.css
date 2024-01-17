@@ -1,0 +1,594 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #F0F0F0; 
+    padding: 10px;
+	font-size: 12px;
+	color: #353535;
+}
+
+@media only screen and (max-width: 600px) {
+    .top-section {
+        padding: 10px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 150px; 
+    }
+
+    .search-bar input {
+        width: 100%; 
+        margin-right: 0;
+    }
+
+    .icons {
+        margin-left: 0;
+        margin-top: 10px; 
+    }
+
+    .icon {
+        margin-left: 10px;
+    }
+
+    .menu li {
+        margin: 10px;
+    }
+
+ .two-column-section {
+        flex-direction: column;
+    }
+
+    .serveis-section,
+    .calendari-section {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .service-button {
+        width: 100%;
+        padding: 15px 10px;
+        height: auto; /* Adjust height as needed */
+    }
+
+    .service-button img {
+        width: 50px; /* Adjust width as needed */
+        height: 50px; /* Adjust height as needed */
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+
+    .calendari-section {
+        margin-top: 20px; /* Add margin to separate from services */
+        text-align: center;
+        margin-right: 0;
+	}
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer-column h3 {
+        height: auto; 
+    }
+
+    .footer-column img {
+        width: 100%; 
+        margin-right: 5px;
+    }
+	
+}
+
+
+.top-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px;
+	width: 200px;
+    margin-right: 10px;
+    border: 1px solid #353535; 
+    border-radius: 20px;
+    outline: none;
+    background-color: #F0F0F0;
+}
+
+.icons {
+    display: flex;
+	margin-left: 30px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    border: 1px solid #353535;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon img {
+    width: 100%;
+    height: auto;
+}
+
+/*Menu*/
+
+.underheader-content {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.menu-section {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu {
+    border-bottom: 1px solid #353535;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    width: 100%; 
+}
+
+.menu li {
+	width: 100%;
+	text-align: center;
+	margin: 20px;
+}
+
+.menu li:last-child {
+    margin-right: auto;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    position: relative;
+}
+
+.menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.menu .dropdown-content a {
+    color: #333;
+    margin: 20px;
+    padding: 10px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #AFFF00;
+    border-radius: 100px;
+}
+
+.menu .dropdown-content a:hover {
+    background-color: #AFFF00;
+    border-radius: 100px;
+}
+
+/* Bajo menú */
+
+.explore-section {
+    position: relative;
+}
+
+.explore-button {
+    position: absolute;
+    bottom: 100px; 
+    left: 1200px; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #AFFF00;
+    color: #353535;
+    font-size: 24px;
+}
+
+.explore-button:hover {
+    background-color: #353535;
+    color: #AFFF00;
+}
+
+/*Serveis i Calendai section */
+
+.two-column-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.serveis-section,
+.calendari-section {
+    width: 50%;
+	margin-left: 50px;
+}
+
+.service-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+	height: 70px;
+}
+
+.service-button img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.calendari-section {
+    width: 40%; 
+    text-align: center;
+	margin-right: 50px;
+}
+
+.month-name {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.datepicker-calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-row-gap: 1rem;
+}
+
+.day, .date, .nul {
+    position: relative;
+    justify-self: center;
+    font-size: .875em;
+    font-weight: 1000;
+    width: 2.25rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.date::before, .nul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff; 
+    z-index: -1; 
+}
+
+.date {
+    cursor: pointer;
+}
+
+.date:hover::before {
+    background-color: #AFFF00; 
+}
+
+.nul::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    z-index: -1; 
+}
+
+/*Activitats*/
+
+.activitats {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.column {
+    text-align: center;
+	margin-top: 10px;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    margin-bottom: 10px;
+}
+
+.yoga-button {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #353535;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 150px;
+	color: #08DFFC;
+}
+
+.kick-button {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #353535;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 150px;
+	color: #F916B4;
+
+	
+}
+
+.tennis-button {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #353535;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 150px;
+	color: #AFFF00;
+}
+
+.yoga-button:hover {
+    color: #353535;
+    background-color: #08DFFC;
+}
+
+.kick-button:hover {
+    color: #353535;
+    background-color: #F916B4;
+}
+
+.tennis-button:hover {
+    color: #353535;
+    background-color: #AFFF00;
+}
+
+.botiga-banner {
+    position: relative;
+	margin-top: 100px;
+}
+
+.botiga-banner img {
+    width: 100%;
+    height: auto;
+    max-height: 100%; 
+    object-fit: cover; 
+	margin-bottom: 20px;
+}
+
+.botiga-section {
+    position: relative;
+}
+
+.botiga-button {
+    position: absolute;
+    bottom: 140px; 
+    left: 1100px; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #AFFF00;
+    color: #353535;
+    font-size: 24px;
+}
+
+.botiga-button:hover {
+    background-color: #353535;
+    color: #AFFF00;
+}
+
+.explore-section {
+    display: flex;
+    justify-content: center;
+}
+
+.explore-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #AFFF00;
+    color: #353535;
+    font-size: 24px;
+    width: auto; /* Let the button adjust its width based on content */
+    margin: 30px 0px -30px -100px; /* Add a margin to create space between the buttons */
+}
+
+/* Add other styles as needed */
+.explore-button:hover {
+    background-color: #353535;
+    color: #AFFF00;
+}
+/* Footer */
+
+.footer-column h3 {
+    font-size: 18px;
+    height: 40px; 
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+
+.footer-column .marge li {
+    margin-bottom: 20px; 
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer-column img {
+    width: 30px; 
+    height: auto;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.footer-column {
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: #353535;
+    color: #fff;
+    padding: 20px;
+    margin: 100px auto 0; 
+    width: 80%;
+    border-radius: 50px;
+}
+
+@media only screen and (min-width: 601px) {
+    body {
+        font-size: 12px;
+    }
+
+    .top-section {
+        padding: 20px;
+    }
+
+    .header-content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .search-bar input {
+        width: 200px;
+        margin-right: 10px;
+    }
+
+    .icons {
+        margin-left: 30px;
+    }
+
+    .icon {
+        margin-left: 30px;
+    }
+
+    .menu li {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .service-button {
+        width: 500px;
+        padding: 15px 30px;
+    }
+
+    .calendari-section,
+    .serveis-section {
+        width: 50%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .footer-column h3 {
+        height: 40px;
+    }
+
+    .botiga-button {
+        position: absolute;
+        bottom: 140px;
+        left: 1100px;
+    }
+}
